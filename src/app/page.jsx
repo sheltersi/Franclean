@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Header from "@/components/Header";
 import Section from "@/components/Section";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -8,6 +9,9 @@ import { testimonials } from "@/data/testimonials";
 export default function Home() {
   return (
     <>
+    <div className="bg-red-500 text-white p-4">
+  Tailwind Test
+</div>
       {/* HERO */}
       <section className="hero">
         <div className="hero-inner">

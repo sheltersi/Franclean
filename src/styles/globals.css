@@ -1,5 +1,170 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Simple layout helpers */
+
+/* ------------------------ */
+/* GLOBAL / LAYOUT          */
+/* ------------------------ */
+
+body {
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
+  margin: 0;
+}
+
+.app-root {
+  min-height: 100vh; /* min-h-screen */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+}
+
+.main-content {
+  flex: 1; /* flex-1 */
+}
+
+.container {
+  max-width: 72rem; /* max-w-6xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+/* ------------------------ */
+/* BUTTONS                  */
+/* ------------------------ */
+
+.btn {
+  display: inline-flex; /* inline-flex */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  transition: all 0.2s; /* transition */
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #2563eb; /* brand.blue */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db; /* slate-300 */
+  color: #1f2937; /* slate-800 */
+}
+
+.btn-outline:hover {
+  background-color: #f1f5f9; /* slate-100 */
+}
+
+/* ------------------------ */
+/* HERO SECTION             */
+/* ------------------------ */
+
+.hero {
+  background-color: #0f172a; /* brand.dark */
+  color: white;
+}
+
+.hero-inner {
+  max-width: 72rem; /* same as container */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  padding-top: 4rem; /* py-16 */
+  padding-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column; /* flex-col */
+  gap: 2.5rem; /* gap-10 */
+  align-items: center; /* items-center */
+}
+
+@media (min-width: 1024px) {
+  .hero-inner {
+    flex-direction: row; /* lg:flex-row */
+    padding-top: 6rem; /* lg:py-24 */
+    padding-bottom: 6rem;
+  }
+}
+
+.hero-kicker {
+  text-transform: uppercase; /* uppercase */
+  letter-spacing: 0.05em; /* tracking-wide */
+  font-size: 0.875rem; /* text-sm */
+  color: #93c5fd; /* blue-300 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.hero-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+.hero-subtitle {
+  font-size: 1rem; /* text-base */
+  color: #e2e8f0; /* slate-200 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.125rem; /* md:text-lg */
+  }
+}
+
+/* ------------------------ */
+/* SECTIONS                 */
+/* ------------------------ */
+
+.section {
+  padding-top: 3rem; /* py-12 */
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 4rem; /* md:py-16 */
+    padding-bottom: 4rem;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+}
+
+/* ------------------------ */
+/* CARDS                    */
+/* ------------------------ */
+
+.card {
+  background-color: #ffffff; /* bg-white */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04); /* shadow-sm */
+  border: 1px solid #f1f5f9; /* slate-100 */
+  padding: 1.25rem; /* p-5 */
+}
+

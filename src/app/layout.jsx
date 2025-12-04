@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
-import "@/styles/custom-styles.css";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+// import "@/styles/custom-styles.css";
+
 
 export const metadata = {
   title: "ProGate Welding & Automation",
