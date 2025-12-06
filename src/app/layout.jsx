@@ -1,5 +1,8 @@
 import "@/styles/globals.css";
-import "@/styles/custom-styles.css"
+import "@/styles/custom-styles.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+import "./fontawesome"; // <-- the config file you created above
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
