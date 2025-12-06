@@ -1,0 +1,21 @@
+.hero-fade-slider {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.fade-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeCycle 40s infinite; /* 10 images → 40 seconds (4 sec each) */
+  animation-delay: calc(var(--i) * 4s);
+}
+
+@keyframes fadeCycle {
+  0%, 10% { opacity: 1; }
+  20%, 100% { opacity: 0; }
+}
+
