@@ -9,9 +9,6 @@ import { testimonials } from "@/data/testimonials";
 export default function Home() {
   return (
     <>
-    <div className="bg-red-500 text-white p-4">
-  Tailwind Test
-</div>
       {/* HERO */}
       <section className="hero">
         <div className="hero-inner">
