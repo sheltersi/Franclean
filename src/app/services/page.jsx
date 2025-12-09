@@ -18,6 +18,8 @@ export default function ServicesPage() {
           <ServiceCard key={service.slug} {...service} />
         ))}
       </div>
+
+      
     </Section>
   );
 }

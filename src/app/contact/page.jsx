@@ -1,5 +1,6 @@
 "use client";
 
+import ServicesMap from "@/components/ServicesAreaMap";
 import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -136,6 +137,8 @@ export default function ContactPage() {
           <h2 className="text-2xl font-semibold text-blue-900 mb-4 text-center">
             Our Service Area
           </h2>
+
+          <ServicesMap />
 
           <div className="w-full h-64 bg-blue-200/30 rounded-2xl border border-blue-100 flex items-center justify-center text-blue-700">
             {/* Placeholder map — you can embed Google Maps here */}
