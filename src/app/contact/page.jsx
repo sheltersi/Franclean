@@ -135,14 +135,10 @@ export default function ContactPage() {
         {/* MAP SECTION */}
         <div className="mt-16">
           <h2 className="text-2xl font-semibold text-blue-900 mb-4 text-center">
-            Our Service Area
+            Our Location
           </h2>
 
-          <ServicesMap />
-
           <div className="w-full h-64 bg-blue-200/30 rounded-2xl border border-blue-100 flex items-center justify-center text-blue-700">
-            {/* Placeholder map — you can embed Google Maps here */}
-    
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.3293493002298!2d28.076554675636654!3d-26.12080237712807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d3c9da215d9%3A0xf23027d64f85a7ac!2s4%20Heelra%20Rd%2C%20Raumaraispark%2C%20Johannesburg%2C%202090!5e0!3m2!1sen!2sza!4v1765031112834!5m2!1sen!2sza" 
 className="w-full h-64"
 style={{ "border":0, }}
