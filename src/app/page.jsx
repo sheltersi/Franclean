@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* TESTIMONIALS */}
       <Section title="What Our Clients Say">
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-3 mt-4">
           {testimonials.map((t, idx) => (
             <TestimonialCard key={idx} {...t} />
           ))}

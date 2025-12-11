@@ -141,11 +141,7 @@ body {
   }
 }
 
-.section-title {
-  font-size: 1.5rem; /* text-2xl */
-  font-weight: 600; /* font-semibold */
-  margin-bottom: 1.5rem; /* mb-6 */
-}
+
 
 @media (min-width: 768px) {
   .section-title {
