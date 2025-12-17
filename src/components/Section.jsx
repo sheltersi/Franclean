@@ -1,3 +1,5 @@
+"use client";
+
 export default function Section({ title, children, className = "" }) {
   return (
     <section className={`section ${className}`}>
