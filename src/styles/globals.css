@@ -1,14 +1,249 @@
+
 @import "tailwindcss";
 
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-pale-sky-50: oklch(95.91% 0.010 252.81);
+--color-pale-sky-100: oklch(91.92% 0.020 245.65);
+--color-pale-sky-200: oklch(83.78% 0.039 245.83);
+--color-pale-sky-300: oklch(75.53% 0.060 246.28);
+--color-pale-sky-400: oklch(67.04% 0.082 248.06);
+--color-pale-sky-500: oklch(58.82% 0.105 248.86);
+--color-pale-sky-600: oklch(50.11% 0.087 248.96);
+--color-pale-sky-700: oklch(41.26% 0.068 247.74);
+--color-pale-sky-800: oklch(31.64% 0.048 247.42);
+--color-pale-sky-900: oklch(21.23% 0.028 247.14);
+--color-pale-sky-950: oklch(17.84% 0.021 249.06);
+
+--color-neon-ice-50: oklch(98.14% 0.026 190.91);
+--color-neon-ice-100: oklch(96.27% 0.050 193.28);
+--color-neon-ice-200: oklch(93.44% 0.095 191.55);
+--color-neon-ice-300: oklch(91.24% 0.127 190.85);
+--color-neon-ice-400: oklch(90.06% 0.148 189.54);
+--color-neon-ice-500: oklch(89.35% 0.155 188.64);
+--color-neon-ice-600: oklch(75.63% 0.131 188.48);
+--color-neon-ice-700: oklch(61% 0.105 189);
+--color-neon-ice-800: oklch(45.70% 0.079 188.85);
+--color-neon-ice-900: oklch(28.66% 0.049 190.49);
+--color-neon-ice-950: oklch(23.15% 0.040 191.98);
+
+--color-seaweed-50: oklch(98.01% 0.027 185.60);
+--color-seaweed-100: oklch(96.24% 0.053 183.24);
+--color-seaweed-200: oklch(93.29% 0.099 182.24);
+--color-seaweed-300: oklch(91.17% 0.135 180.50);
+--color-seaweed-400: oklch(89.85% 0.158 177.74);
+--color-seaweed-500: oklch(89.27% 0.168 174.88);
+--color-seaweed-600: oklch(75.45% 0.142 174.90);
+--color-seaweed-700: oklch(61% 0.114 175.61);
+--color-seaweed-800: oklch(45.59% 0.085 175.97);
+--color-seaweed-900: oklch(28.74% 0.053 178.72);
+--color-seaweed-950: oklch(23.31% 0.043 179.09);
+
+--color-coffee-bean-50: oklch(96% 0.003 345.21);
+--color-coffee-bean-100: oklch(92% 0.006 3.35);
+--color-coffee-bean-200: oklch(83.87% 0.012 357.06);
+--color-coffee-bean-300: oklch(75.63% 0.015 1.70);
+--color-coffee-bean-400: oklch(67.05% 0.022 2.60);
+--color-coffee-bean-500: oklch(58.26% 0.030 0.58);
+--color-coffee-bean-600: oklch(49.73% 0.024 3.01);
+--color-coffee-bean-700: oklch(40.85% 0.018 2.35);
+--color-coffee-bean-800: oklch(31.33% 0.015 358.03);
+--color-coffee-bean-900: oklch(21.10% 0.008 4.22);
+--color-coffee-bean-950: oklch(17.71% 0.005 355.44);
+
+--color-cherry-rose-50: oklch(95.17% 0.019 1.39);
+--color-cherry-rose-100: oklch(90.28% 0.038 1.52);
+--color-cherry-rose-200: oklch(80.69% 0.082 2.65);
+--color-cherry-rose-300: oklch(71.69% 0.127 4.92);
+--color-cherry-rose-400: oklch(63.61% 0.169 8.14);
+--color-cherry-rose-500: oklch(57.30% 0.203 13.07);
+--color-cherry-rose-600: oklch(48.66% 0.169 12.68);
+--color-cherry-rose-700: oklch(39.73% 0.135 12.07);
+--color-cherry-rose-800: oklch(30.30% 0.099 10.98);
+--color-cherry-rose-900: oklch(20.09% 0.055 8.75);
+--color-cherry-rose-950: oklch(16.86% 0.044 6.40);
+
+--color-deep-sky-blue-50: oklch(96.32% 0.022 230.54);
+--color-deep-sky-blue-100: oklch(92.80% 0.042 231.71);
+--color-deep-sky-blue-200: oklch(85.98% 0.083 232.88);
+--color-deep-sky-blue-300: oklch(79.73% 0.120 234.93);
+--color-deep-sky-blue-400: oklch(74.45% 0.150 237.97);
+--color-deep-sky-blue-500: oklch(69.81% 0.171 243.77);
+--color-deep-sky-blue-600: oklch(59.27% 0.144 243.18);
+--color-deep-sky-blue-700: oklch(47.99% 0.116 242.91);
+--color-deep-sky-blue-800: oklch(36.26% 0.085 241.36);
+--color-deep-sky-blue-900: oklch(23.48% 0.051 237.09);
+--color-deep-sky-blue-950: oklch(19.31% 0.041 234.78);
+
+--color-cyan-glow-50: oklch(97.92% 0.026 199.66);
+--color-cyan-glow-100: oklch(96.09% 0.050 199.44);
+--color-cyan-glow-200: oklch(93.14% 0.093 198.17);
+--color-cyan-glow-300: oklch(90.79% 0.125 198.30);
+--color-cyan-glow-400: oklch(89.25% 0.144 198.72);
+--color-cyan-glow-500: oklch(88.42% 0.150 199.53);
+--color-cyan-glow-600: oklch(74.81% 0.127 199.33);
+--color-cyan-glow-700: oklch(60.54% 0.103 199.01);
+--color-cyan-glow-800: oklch(45.36% 0.077 198.42);
+--color-cyan-glow-900: oklch(28.45% 0.048 199.13);
+--color-cyan-glow-950: oklch(23.24% 0.040 197.57);
+
+--color-mint-leaf-50: oklch(97.06% 0.016 177.09);
+--color-mint-leaf-100: oklch(94.23% 0.030 175.93);
+--color-mint-leaf-200: oklch(88.62% 0.060 174.76);
+--color-mint-leaf-300: oklch(83.24% 0.087 173.31);
+--color-mint-leaf-400: oklch(78.17% 0.111 171.44);
+--color-mint-leaf-500: oklch(73.48% 0.130 168.96);
+--color-mint-leaf-600: oklch(62.35% 0.109 169.14);
+--color-mint-leaf-700: oklch(50.70% 0.087 169.43);
+--color-mint-leaf-800: oklch(38.34% 0.063 169.95);
+--color-mint-leaf-900: oklch(24.89% 0.037 171.14);
+--color-mint-leaf-950: oklch(20.41% 0.027 174.20);
+
+--color-aquamarine-50: oklch(97.48% 0.022 175.98);
+--color-aquamarine-100: oklch(95.29% 0.045 175.67);
+--color-aquamarine-200: oklch(90.88% 0.085 173.52);
+--color-aquamarine-300: oklch(87.21% 0.122 171.51);
+--color-aquamarine-400: oklch(84.18% 0.150 168.39);
+--color-aquamarine-500: oklch(81.60% 0.167 165.24);
+--color-aquamarine-600: oklch(69.23% 0.142 165.12);
+--color-aquamarine-700: oklch(56.04% 0.113 165.93);
+--color-aquamarine-800: oklch(41.99% 0.082 166.54);
+--color-aquamarine-900: oklch(26.98% 0.050 168.78);
+--color-aquamarine-950: oklch(21.89% 0.039 168.46);
+
+--color-pine-blue-50: oklch(96.76% 0.008 186.89);
+--color-pine-blue-100: oklch(93.44% 0.016 187.32);
+--color-pine-blue-200: oklch(86.81% 0.033 184.44);
+--color-pine-blue-300: oklch(80.19% 0.048 184.58);
+--color-pine-blue-400: oklch(73.58% 0.064 184.18);
+--color-pine-blue-500: oklch(66.79% 0.075 183.18);
+--color-pine-blue-600: oklch(56.99% 0.065 183.23);
+--color-pine-blue-700: oklch(46.51% 0.051 182.91);
+--color-pine-blue-800: oklch(35.39% 0.037 182.28);
+--color-pine-blue-900: oklch(23.34% 0.021 185.33);
+--color-pine-blue-950: oklch(19.40% 0.015 180.83);
+
+--color-pine-teal-50: oklch(97.12% 0.015 186.70);
+--color-pine-teal-100: oklch(94.48% 0.031 184.17);
+--color-pine-teal-200: oklch(89.01% 0.058 184.05);
+--color-pine-teal-300: oklch(83.95% 0.085 182.55);
+--color-pine-teal-400: oklch(79% 0.107 180.73);
+--color-pine-teal-500: oklch(74.70% 0.123 178.72);
+--color-pine-teal-600: oklch(63.26% 0.102 178.95);
+--color-pine-teal-700: oklch(51.57% 0.082 179.54);
+--color-pine-teal-800: oklch(38.87% 0.060 180.33);
+--color-pine-teal-900: oklch(25.31% 0.036 180.12);
+--color-pine-teal-950: oklch(20.82% 0.027 178.70);
+
+
+
+}
+
+:root {
+--color-cherry-rose-50: oklch(95.17% 0.019 1.39);
+
+  --foreground: 210 40% 10%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 210 40% 10%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 40% 10%;
+
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 20% 96%;
+  --secondary-foreground: 210 40% 20%;
+
+  --muted: 210 20% 96%;
+  --muted-foreground: 210 15% 45%;
+
+  --accent: 162 63% 41%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 210 20% 90%;
+  --input: 210 20% 90%;
+  --ring: 199 89% 48%;
+
+  --radius: 0.75rem;
+
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+/* =========================
+   Dark Mode
+   ========================= */
+.dark {
+  --background: 210 40% 6%;
+  --foreground: 210 20% 98%;
+
+  --card: 210 40% 8%;
+  --card-foreground: 210 20% 98%;
+
+  --popover: 210 40% 8%;
+  --popover-foreground: 210 20% 98%;
+
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 30% 15%;
+  --secondary-foreground: 210 20% 98%;
+
+  --muted: 210 30% 15%;
+  --muted-foreground: 210 15% 65%;
+
+  --accent: 162 63% 41%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 210 30% 18%;
+  --input: 210 30% 18%;
+  --ring: 199 89% 48%;
+
+  --sidebar-background: 240 5.9% 10%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+/* =========================
+   Global Base Styles
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
+}
 
 /* ------------------------ */
 /* GLOBAL / LAYOUT          */
 /* ------------------------ */
-
+h1, h2, h3 {
+  font-family: 'Satoshi', sans-serif;
+}
 body {
-  background-color: #f8fafc; /* slate-50 */
-  color: #0f172a; /* slate-900 */
+   background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
   margin: 0;
+  font-family:'Inter', sans-serif ;
 }
 
 .app-root {
@@ -79,8 +314,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 
-  padding-top: 4rem; /* py-16 */
-  padding-bottom: 4rem;
+  padding-top: 10px; /* py-16 */
+  padding-bottom: 10px;
 
   display: flex;
   flex-direction: column; /* flex-col */
@@ -91,8 +326,8 @@ body {
 @media (min-width: 1024px) {
   .hero-inner {
     flex-direction: row; /* lg:flex-row */
-    padding-top: 6rem; /* lg:py-24 */
-    padding-bottom: 6rem;
+    padding-top:10px; /* lg:py-24 */
+    padding-bottom: 10px;
   }
 }
 

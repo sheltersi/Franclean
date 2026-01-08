@@ -1,32 +1,48 @@
 
+// Backgrounds
+$bg-main: #e5e1ee;      // lavender
+$bg-card: #dffdff;     // light cyan
+
+// Primary action
+$primary: #68edc6;     // aquamarine (buttons, highlights)
+
+// Secondary / accents
+$secondary: #90bede;   // powder blue
+
+// Call-to-action or icons
+$accent: #90f3ff;      // electric aqua
+
+// Text (ADD THIS)
+$text-dark: #1f2937;   // dark slate for readability
+
+$muted:#F2F4F6;
+$muted-foreground:#627384;
+$primary:#0EA5E9;
+$primary-foreground:#FFFFFF;
+$foreground:#F9FAFB;
+$accent:#27AA83;
+$card-foreground:#0F1924;
+
+
 /* SCSS HEX */
-$royal-blue: #2563ebff;
-$pumpkin-spice: #f97316ff;
-$prussian-blue: #0f172aff;
-$bright-snow: #f9fafbff;
-$charcoal-blue: #4b5563ff;
+$lavender: #e5e1eeff; //Cards / Sections / Modals
+$light-cyan: #dffdffff; //App Background
+$powder-blue: #90bedeff;
+$aquamarine: #68edc6ff; //Primary Buttons (Book pickup / Place order) plus text white
+$electric-aqua: #90f3ffff; //Highlights / Badges / Success
 
-/* SCSS HSL */
-$royal-blue: hsla(221, 83%, 53%, 1);
-$pumpkin-spice: hsla(25, 95%, 53%, 1);
-$prussian-blue: hsla(222, 47%, 11%, 1);
-$bright-snow: hsla(210, 20%, 98%, 1);
-$charcoal-blue: hsla(215, 14%, 34%, 1);
+$ink-blue:      #1f3a4a; // primary text & structure
+$deep-teal:     #0f4c5c; // strong CTA & emphasis
+$pine-blue: #3d7068ff;
+$pine-teal: #14453dff;
 
-/* SCSS RGB */
-$royal-blue: rgba(37, 99, 235, 1);
-$pumpkin-spice: rgba(249, 115, 22, 1);
-$prussian-blue: rgba(15, 23, 42, 1);
-$bright-snow: rgba(249, 250, 251, 1);
-$charcoal-blue: rgba(75, 85, 99, 1);
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-right: linear-gradient(90deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-bottom: linear-gradient(180deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-left: linear-gradient(270deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-top-right: linear-gradient(45deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-bottom-right: linear-gradient(135deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-top-left: linear-gradient(225deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-bottom-left: linear-gradient(315deg, #2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
-$gradient-radial: radial-gradient(#2563ebff, #f97316ff, #0f172aff, #f9fafbff, #4b5563ff);
+// UI Tips
+
+// Use white cards on pastel backgrounds
+
+// Buttons → aquamarine
+
+// Icons & checkmarks → electric aqua
+
+// Text → dark gray, not black

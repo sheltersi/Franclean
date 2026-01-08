@@ -7,9 +7,8 @@ import { useState } from "react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/projects", label: "Projects" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/reviews", label: "Reviews" },
+   { href: "/howItWorks", label: "How It Works" },
    { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
@@ -22,19 +21,19 @@ export default function Header() {
 
   return (
     // <header className="bg-[#E0E1E9] border-b border-slate-400 sticky top-0 z-50">
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 bg-[#ffffff] text-[#1f3a4a] backdrop-blur-md border-b border-slate-200 shadow-sm">
 
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between py-4 gap-6">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="h-16 w-16 rounded-xl bg-brand.blue text-white flex items-center justify-center text-sm font-bold">
+          <div className="h-16 w-16 rounded-xl bg-[#ffffff] text-[#1f3a4a] flex items-center justify-center text-sm font-bold">
             <img src="assets/img/favicon.png" alt="icon" className="w-16 h-16" />
           </div>
 
           <div className="leading-tight">
-            <div className="font-semibold text-slate-900">ODiMs</div>
-            <div className="text-xs text-slate-500">Welding & Automation</div>
+            <div className="font-semibold text-[#1f3a4a]">Franclean</div>
+            <div className="text-xs text-slate-500">Laundry</div>
           </div>
         </Link>
 
@@ -49,8 +48,8 @@ export default function Header() {
                 href={link.href}
                 className={`transition ${
                   isActive
-                    ? "text-brand.blue font-semibold border-b-2 border-brand.blue pb-1"
-                    : "text-black hover:text-brand.blue"
+                    ? "text-[#0f4c5c] font-semibold border-b-2 border-brand.blue pb-1"
+                    : "text-[#1f3a4a] hover:text-(--text-main)"
                 }`}
               >
                 {link.label}
@@ -61,7 +60,7 @@ export default function Header() {
 
         {/* Call button (desktop only) */}
         <div className="hidden md:block">
-          <a href="tel:+27XXXXXXXXX" className="btn btn-primary text-xs md:text-sm">
+          <a href="tel:+27810713204" className="btn bg-[#68edc6ff] text-xs md:text-sm">
             Call / WhatsApp
           </a>
         </div>
@@ -101,8 +100,8 @@ export default function Header() {
                   onClick={() => setOpen(false)}
                   className={`py-2 ps-4 rounded-3xl ms-3 transition ${
                     isActive
-                      ? "bg-brand.blue text-blue-500"
-                      : "text-black hover:bg-[#ABD2FA]"
+                      ? "bg-brand.blue text-[#0f4c5c]"
+                      : "text-[#1f3a4a] hover:bg-[#ABD2FA]"
                   }`}
                 >
                   {link.label}
@@ -113,7 +112,7 @@ export default function Header() {
             {/* Call button on mobile */}
             <a
               href="tel:+27810723204"
-              className="btn btn-primary text-xs w-fit mt-2"
+              className="btn bg-[#68edc6ff] text-xs w-fit mt-2"
             >
               Call / WhatsApp
             </a>

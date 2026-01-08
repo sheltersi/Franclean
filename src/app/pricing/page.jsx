@@ -1,184 +1,159 @@
-"use client";
+import { Helmet } from "react-helmet-async";
 
-import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
+import PricingSection from "@/components/PricingSection";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
-import { AnimatedBillCards } from "@/components/AnimatedBillCards";
-import { ComparePricingTable } from "@/components/ComparePricingTable";
+export const metadata = {
+  title: "Pricing - Franclean | Affordable Laundry Services",
+  description:
+    "View Franclean pricing for wash & fold, dry cleaning, and specialty services. Transparent pricing with no hidden fees.",
+};
 
-export default function PricingSection() {
-  const pricing = [
-    {
-      title: "Sliding Gates",
-      price: "From R4,500",
-      features: [
-        "Custom sizes",
-        "Modern or palisade designs",
-        "Motor-ready frame",
-        "Installation available",
-      ],
-    },
-    {
-      title: "Privacy Sheet Gates",
-      price: "From R6,500",
-      features: [
-        "Solid steel sheet",
-        "Premium modern look",
-        "Laser-cut options available",
-        "Strong & long-lasting",
-      ],
-      featured: true,
-    },
-    {
-      title: "Gate Motor Installation",
-      price: "From R1,800",
-      features: [
-        "All major brands",
-        "New installation or repairs",
-        "Remote programming",
-        "Safety checks included",
-      ],
-    },
-    {
-      title: "Burglar Bars",
-      price: "From R350 per window",
-      features: [
-        "Custom sizes",
-        "Strong steel build",
-        "Modern or cottage-pane style",
-        "Installation included",
-      ],
-    },
-    {
-      title: "Carports",
-      price: "From R8,000",
-      features: [
-        "Steel frame",
-        "IBR roof available",
-        "Custom sizes",
-        "Perfect for homes & businesses",
-      ],
-    },
+const Pricing = () => {
+  const dryCleaningServices = [
+    { service: "3 PC Suit", price: "R250" },
+    { service: "2 PC Suit", price: "R220" },
+    { service: "Jersey", price: "R120" },
+    { service: "Evening Dress", price: "R220" },
+    { service: "Leather Jacket", price: "R350" },
+    { service: "Pencil Pleated Dress", price: "R200" },
+    { service: "Leather Jacket", price: "R350" },
+    { service: "Full Coat", price: "R300" },
+    { service: "knee Length Coat", price: "R200" },
+    { service: "Wedding Dress", price: "R1600" },
+    { service: "Short Coat", price: "R150" },
+    { service: "Pillow", price: "R80" },
+    { service: "Jacket / Blazer", price: "R240" },
+    { service: "Skirt", price: "R90" },
+    { service: "Trousers", price: "R100" },
+    { service: "Winter Coat", price: "R350" },
+    { service: "Trench Coat/Overcoat", price: "R300" },
+    { service: "Wind Breaker", price: "R240" },
   ];
 
-  const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0 },
-  };
+  const beddingServices = [
+    { service: "Blanket(Double)", price: "R200" },
+    { service: "Blanket(Queen and King", price: "R250" },
+    { service: "Comforters/Fleece(Double)", price: "R200" },
+    { service: "Comforters/Fleece(Queen and King)", price: "R230" },
+    { service: "Duvet Inners(Double)", price: "R250" },
+    { service: "Duvet Inners(Double)", price: "R300" },
+    { service: "Duvet Inner Feather Hallow (Double)", price: "R300" },
+    { service: "Duvet Inner Feather Hallow (Queen and King)", price: "R350" },
+    { service: "Mattress Protector (Double)", price: "R200" },
+    { service: "Mattress Protector (Queen and King)", price: "R250" },
+    { service: "Electric Blanket", price: "R400" },
+  ];
 
   return (
-    <section className="py-20 relative bg-gradient-to-b from-gray-50 to-gray-100">
-      {/* Background accents */}
-      <div className="absolute -top-10 left-10 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-2xl"></div>
-<div className="absolute w-40 h-40 md:left-120 left-20 bg-blue-300/20 rotate-45"></div>
-<div className="absolute w-40 h-40 md:left-160 left-55 bg-blue-300/20 rotate-45"></div>
-<div className="absolute w-40 h-40 md:left-200 left-95 bg-blue-300/20 rotate-45"></div>
-     
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <>
+      <main className="">
+        {/* Hero */}
+        <section className="py-20 bg-gradient-to-br from-[#8be4fb] via-[#e9f9ff] to-[#ffffff]">
+          <div className="container mx-auto px-4 text-center animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-6">
+              Simple, Honest
+              <span className="text-gradient"> Pricing</span>
+            </h1>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Quality laundry services at prices that make sense. No hidden
+              fees, no surprises.
+            </p>
+          </div>
+        </section>
 
-        {/* Header */}
-        {/* <motion.h2
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-center text-gray-800 mb-12"
-        >
-          Pricing Guide
-        </motion.h2>
-        */}
-        
-        <div className="text-center mb-12 pb-12">
-  <h1 className="text-4xl md:text-5xl font-bold font-mono text-blue-900">
-    Pricing <span className="text-[#59A5D8]">Guide</span>
-  </h1>
+        {/* Pricing Plans */}
+        <PricingSection />
 
-  <div className="max-w-2xl mx-auto">
-    <p className="text-center text-[#6E7A85] mt-4 font-mono text-lg">
-     Choose a category, switch billing, and compare packages. Transparent pricing for every job.
-    </p>
-  </div>
-</div>
-
-      
-
-        {/* Pricing Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {pricing.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-2xl p-8 shadow-lg border 
-                ${
-                  item.featured
-                    ? "bg-blue-600 text-white border-blue-700 shadow-xl scale-[1.02]"
-                    : "bg-white text-gray-800 border-gray-200 hover:shadow-2xl"
-                }
-                transition-transform duration-300 hover:-translate-y-1 cursor-pointer`}
-            >
-              {/* Title */}
-              <h3
-                className={`text-2xl font-semibold mb-2 ${
-                  item.featured ? "text-white" : "text-gray-800"
-                }`}
-              >
-                {item.title}
-              </h3>
-
-              {/* Price */}
-              <p
-                className={`font-bold text-3xl mb-4 ${
-                  item.featured ? "text-white" : "text-blue-600"
-                }`}
-              >
-                {item.price}
+          {/* Bedding & Linen Care Individual Item Pricing */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Bedding & Linen Care
+              </h2>
+              <p className="text-gray-600">
+                Individual item pricing for bedding & linen care services
               </p>
-
-              {/* Features */}
-              <ul className="space-y-3">
-                {item.features.map((feature, i) => (
-                  <li
-                    key={i}
-                    className="flex items-center gap-3 text-gray-600 dark:text-gray-200"
+            </div>
+            <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {beddingServices.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-between rounded-xl border border-gray-100 p-4 hover:bg-gray-50 transition"
                   >
-                    <CheckCircle
-                      className={`w-5 h-5 ${
-                        item.featured ? "text-white" : "text-blue-600"
-                      }`}
-                    />
-                    <span className={item.featured ? "text-white" : ""}>
-                      {feature}
+                    <span className="text-gray-700 font-medium">
+                      <span className="text-lg pr-2">🧺</span>
+                      {item.service}
                     </span>
-                  </li>
+                    {/* Flexible dotted divider */}
+                    <div className="flex-1 mx-3 border-b border-dotted border-gray-500" />
+                    <span className="text-gray-900 font-semibold">
+                      {item.price}
+                    </span>
+                  </div>
                 ))}
-              </ul>
-
-              {/* CTA */}
-              <div className="mt-6">
-                <a
-                  href="/quote"
-                  className={`block text-center px-6 py-3 rounded-xl font-semibold transition 
-                    ${
-                      item.featured
-                        ? "bg-white text-blue-700 hover:bg-gray-100"
-                        : "bg-blue-600 text-white hover:bg-blue-700"
-                    }`}
-                >
-                  Get Quote
-                </a>
               </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-      <AnimatedBillCards />
-      <ComparePricingTable />
-    </section>
+            </div>
+          </div>
+        </section>
+
+        {/* Dry Cleaning Individual Item Pricing */}
+        <section className="pb-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Dry Cleaning Prices
+              </h2>
+              <p className="text-gray-600">
+                Individual item pricing for dry cleaning services
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {dryCleaningServices.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-between rounded-xl border border-gray-100 p-4 hover:bg-gray-50 transition"
+                  >
+                    <span className="text-gray-700 font-medium">
+                      <span className="text-lg pr-2">🧺</span>
+                      {item.service}
+                    </span>
+                    {/* Flexible dotted divider */}
+                    <div className="flex-1 mx-3 border-b border-dotted border-gray-500" />
+                    <span className="text-gray-900 font-semibold">
+                      {item.price}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Ready to Get Started?
+            </h2>
+            <p className="text-gray-600 mb-8">
+              First-time customers get 20% off their first order!
+            </p>
+            <a
+              href="/contact"
+              className="inline-block px-8 py-3 bg-sky-500 text-white font-semibold rounded-full hover:bg-sky-600 transition-colors"
+            >
+              Schedule Your Pickup
+            </a>
+          </div>
+        </section>
+        <WhatsAppButton />
+      </main>
+    </>
   );
-}
+};
+
+export default Pricing;

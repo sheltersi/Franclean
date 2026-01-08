@@ -1,6 +1,9 @@
 import "@/styles/globals.css";
 import "@/styles/custom-styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import "@/styles/animation.css"
+import "@/styles/button.css"
+import "@/styles/card.css"
 
 import "./fontawesome"; // <-- the config file you created above
 
@@ -12,8 +15,8 @@ import Providers from "@/components/Providers";
 
 export const metadata = {
   title:{
-    default:  "ODIMS Welding & Automation",
-    template: "%s | ODIMS Welding & Automation",
+    default:  "Franclean Laundry",
+    template: "%s | Franclean Laundry",
   },
   icons: {
     icon: [

@@ -1,91 +1,100 @@
-import Link from "next/link";
+import { Droplet, Facebook, Instagram, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
-import { faFacebook, faLinkedin, faSquareLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
-import { faCircleArrowRight, faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-[#091540] text-slate-300 mt-12">
-     {/* <div className="absolute rotate-120 bottom-0 top-5 w-22 h-50 bg-blue-400/10 rounded-full"></div>
-      <div className="absolute rotate-120 md:right-320 right-96 -bottom-101 w-22 h-120 bg-blue-400/10 rounded-full"></div>
-      <div className="absolute rotate-120 md:right-320 right-96 -bottom-130 w-22 h-120 bg-blue-400/10 rounded-full"></div> */}
+    <footer id="contact" className="bg-gray-900 text-white py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <a href="#" className="flex items-center gap-2 mb-6">
+              <Droplet className="w-8 h-8 text-sky-500 fill-sky-200" />
+              <span className="text-xl font-bold">
+                Fran<span className="text-sky-500">Clean</span>
+              </span>
+            </a>
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Professional laundry service with free pickup and delivery. 
+              Your clothes deserve the best care.
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sky-500 transition-colors duration-300">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sky-500 transition-colors duration-300">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sky-500 transition-colors duration-300">
+                <Twitter className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
 
-      <div className="container py-8 grid gap-6 md:grid-cols-4 text-sm">
-     {/* <div className="absolute rotate-120 right-10 w-22 h-70 bg-blue-400/10 rounded-full"></div>
-     <div className="absolute rotate-120 -bottom-10 right-10 w-22 h-70 bg-blue-400/10 rounded-full"></div>
-         */}
-        <div>
-          <h3 className="font-semibold text-white mb-2">ODims Welding & Automation</h3>
-          <p>Strong steel. Smart access. Welding, gate motors, remotes and garage doors.</p>
-        </div>
-        <div>
-          <h4 className="font-semibold text-white mb-2">Quick Links</h4>
-          <ul className="space-y-1">
-            <li><Link href="/services" className="hover:underline">Services</Link></li>
-            <li><Link href="/service-areas" className="hover:underline">Service Areas</Link></li>
-            <li><Link href="/quote" className="hover:underline">Request a Quote</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-white mb-2">Contact</h4>
-            <div className="flex items-center gap-2">
-                <div className="bg-[#84D2F6] text-white p-2 rounded-full">
-                  <FontAwesomeIcon icon={faPhone} />
-                </div>
-                  <p className="">+27 81 071 3204</p>
-              </div>
-              <div className="flex items-center gap-2 mt-2">
-                <div className="bg-[#84D2F6] text-white p-2 rounded-full">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </div>
-                  <p className=""> info@odimsengineering.co.za</p>
-              </div>
-                <div className="flex items-center gap-2 mt-2">
-                <div className="bg-[#84D2F6] text-white p-2 rounded-full">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                 <p> 4 Heelra Rd, Raumaraispark, Johannesburg 2090, South Africa
-                </p>
-              </div>
-               <div className="relative mt-2">
-  <input
-    type="email"
-    placeholder="Enter your email"
-    className="peer mt-2 w-full px-4 py-3 pr-12 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-[#F97316]"
-  />
-   
-  <button 
-    className="absolute rounded-full right-0 top-1/2 -translate-y-1/2 text-white peer-focus:text-black"
-  >
-    <FontAwesomeIcon className="p-2 text-[#ABD2FA] text-2xl" icon={faCircleArrowRight} />
-  </button>
-</div>
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              {["Services", "Pricing", "How It Works", "FAQs", "About Us"].map((link) => (
+                <li key={link}>
+                  <a href="#" className="text-gray-400 hover:text-sky-500 transition-colors duration-300">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
+          {/* Services */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Services</h4>
+            <ul className="space-y-3">
+              {["Wash & Fold", "Dry Cleaning", "Ironing", "Stain Removal", "Express Service"].map((service) => (
+                <li key={service}>
+                  <a href="#" className="text-gray-400 hover:text-sky-500 transition-colors duration-300">
+                    {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-sky-500 mt-1 flex-shrink-0" />
+                <span className="text-gray-400">4 Heelra Road, Raumaraispark, Johannesburg 2090, South Africa</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-sky-500 flex-shrink-0" />
+                <a href="tel:+1234567890" className="text-gray-400 hover:text-sky-500 transition-colors">
+                  081 071 3204
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-sky-500 flex-shrink-0" />
+                <a href="mailto:hello@freshwash.com" className="text-gray-400 hover:text-sky-500 transition-colors">
+                  info@franclean.co.za
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-             <h4 className="font-semibold text-white mb-2">Our Service Areas</h4>
-            <p>Gauteng, North West, Mphumalanga and Sorrounding Areas</p>
+
+        {/* Bottom */}
+        <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-sm">
+            © 2025 Franclean. All rights reserved. Designed & Developed By <span><a href="https://sheltersibanda.com/" className="text-sky-500">Shelter</a></span>
+          </p>
+          <div className="flex gap-6 text-sm">
+            <a href="#" className="text-gray-500 hover:text-sky-500 transition-colors">Privacy Policy</a>
+            <a href="#" className="text-gray-500 hover:text-sky-500 transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
-     <div className="border-t border-slate-700 text-xs text-center py-3 text-slate-500">
-  <div className="container py-8 grid gap-6 md:grid-cols-4 text-sm items-center">
-    
-    <div className="md:col-span-2">
-      © {new Date().getFullYear()} ODims Welding & Automation. All rights reserved.
-    </div>
-<div>
- Designed and developed by <span><a href="https://sheltersibanda.com/" className="text-[#ABD2FA]">Shelter</a></span>
-</div>
-    <div className="flex items-center gap-2 justify-center md:justify-end md:text-right">
-      <FontAwesomeIcon className="text-lg text-[#ABD2FA]" icon={faSquareLinkedin} />
-      <FontAwesomeIcon className="text-lg text-[#ABD2FA]" icon={faFacebook} />
-      <FontAwesomeIcon className="text-lg text-[#ABD2FA]" icon={faTwitterSquare} />
-    </div>
-
-  </div>
-</div>
-
     </footer>
   );
-}
+};
+
+export default Footer;
