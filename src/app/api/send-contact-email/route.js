@@ -11,11 +11,11 @@ export async function POST(req) {
 
   try {
     await resend.emails.send({
-      from: "Odims Website <noreply@mail.odims.co.za>",
+      from: "Franclean Laundry Website <noreply@mail.franclean.co.za>",
       to: ["sheltersibanda002@gmail.com"],
-      subject: `New Contact Request: ${service}`,
+      subject: `New Landry Contact Request`,
       html: `
-        <h2>New Contact Request</h2>
+        <h2>New Laundry Contact Request</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
@@ -31,7 +31,7 @@ export async function POST(req) {
       html: `
         <p>Hi ${name},</p>
         <p>Thank you for contacting <strong>Franclean Laundry</strong>.</p>
-        <p>We’ve received your request for <strong>${service}</strong> and will contact you shortly.</p>
+        <p>We’ve received your message and will contact you shortly.</p>
         <p>If urgent, you can call us directly.</p>
         <br/>
          <p>— Best Regards</p>

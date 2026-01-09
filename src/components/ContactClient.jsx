@@ -2,9 +2,11 @@
 
 import { Clock, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
+import { supabase } from "@/lib/supabaseClient";
 
 const ContactClient = () => {
 
@@ -287,6 +289,7 @@ const ContactClient = () => {
                 </label>
                 <textarea
                   rows="4"
+                name="message"
                   placeholder="How can we help you?"
                   className="w-full px-4 py-3 rounded-xl border outline-none resize-none"
                   style={{ borderColor: "#e5e7eb" }}
