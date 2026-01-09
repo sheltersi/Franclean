@@ -1,6 +1,5 @@
 import { ArrowRight, Calendar, Clock, Search, Tag } from "lucide-react";
 import Link from "next/link";
-import { Helmet } from "react-helmet-async";
 
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 

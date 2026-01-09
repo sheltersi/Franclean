@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet-async";
-
 import PricingSection from "@/components/PricingSection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 

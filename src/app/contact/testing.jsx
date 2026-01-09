@@ -1,10 +1,6 @@
 import { Clock, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { toast } from "sonner";
-
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,13 +29,6 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us - FreshWash | Get in Touch</title>
-        <meta name="description" content="Contact FreshWash for questions, scheduling, or feedback. We're here to help with all your laundry needs." />
-      </Helmet>
-
-      <Navbar />
-      
       <main className="pt-20">
         {/* Hero */}
         <section className="py-20 bg-gradient-to-br from-sky-50 to-cyan-50">
@@ -152,7 +141,7 @@ const Contact = () => {
         </section>
       </main>
 
-      <Footer />
+ 
     </>
   );
 };
