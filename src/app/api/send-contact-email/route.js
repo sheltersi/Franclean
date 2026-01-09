@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req) {
   const data = await req.json();
 
-  const { name, email, phone, service, message } = data;
+  const { name, email, phone, message } = data;
 
   try {
     await resend.emails.send({
@@ -19,24 +19,23 @@ export async function POST(req) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Service:</strong> ${service}</p>
         <p><strong>Message:</strong><br/>${message}</p>
       `,
     });
 
      // AUTO-REPLY TO CUSTOMER
     await resend.emails.send({
-      from: "ODiMs Welding & Automation <noreply@mail.odims.co.za>",
+      from: "Franclean Laundry <noreply@mail.franclean.co.za>",
       to: [email],
       subject: "We’ve received your request",
       html: `
         <p>Hi ${name},</p>
-        <p>Thank you for contacting <strong>ODiMs Welding & Automation</strong>.</p>
+        <p>Thank you for contacting <strong>Franclean Laundry</strong>.</p>
         <p>We’ve received your request for <strong>${service}</strong> and will contact you shortly.</p>
         <p>If urgent, you can call us directly.</p>
         <br/>
          <p>— Best Regards</p>
-        <p>— ODiMs Team</p>
+        <p>— Fraclean Laundry Team</p>
 
          ${emailFooter()}
       `,

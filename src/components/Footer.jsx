@@ -84,9 +84,20 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+      
           <p className="text-gray-500 text-sm">
-            © 2025 Franclean. All rights reserved. Designed & Developed By <span><a href="https://sheltersibanda.com/" className="text-sky-500">Shelter</a></span>
-          </p>
+  © {new Date().getFullYear()} Franclean. All rights reserved. </p> 
+  <p>Designed & Developed By{" "}
+  <a
+    href="https://sheltersibanda.com/"
+    className="text-sky-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Shelter
+  </a>
+</p>
+
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-500 hover:text-sky-500 transition-colors">Privacy Policy</a>
             <a href="#" className="text-gray-500 hover:text-sky-500 transition-colors">Terms of Service</a>

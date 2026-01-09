@@ -5,13 +5,19 @@ export function emailFooter() {
     <table width="100%" cellpadding="0" cellspacing="0" style="background:#f9fafb;padding:16px;border-radius:8px;font-family:Arial,sans-serif;">
       <tr>
         <td style="padding-bottom:8px;">
-          <strong style="color:#111827;">ODiMs Welding & Automation</strong>
+          <strong style="color:#111827;">Franclean Laundry</strong>
         </td>
       </tr>
 
       <tr>
         <td style="padding-bottom:6px;">
-          Professional welding, gates & automation solutions
+          Professional laundry, dry cleaning & ironing services
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-bottom:6px;">
+          🚚 Convenient pickup & delivery available
         </td>
       </tr>
 
@@ -23,23 +29,23 @@ export function emailFooter() {
 
       <tr>
         <td style="padding-bottom:6px;">
-          📞 <a href="tel:+27810713204" style="color:#2563eb;text-decoration:none;">
-            +27 81 071 3204
+          📞 <a href="tel:+27633264684" style="color:#2563eb;text-decoration:none;">
+            +27 63 326 4684
           </a>
         </td>
       </tr>
 
       <tr>
         <td style="padding-bottom:6px;">
-          ✉️ <a href="mailto:info@odims.co.za" style="color:#2563eb;text-decoration:none;">
-            info@odims.co.za
+          ✉️ <a href="mailto:info@franclean.co.za" style="color:#2563eb;text-decoration:none;">
+            info@franclean.co.za
           </a>
         </td>
       </tr>
 
       <tr>
         <td style="padding-top:10px;font-size:12px;color:#6b7280;">
-          © ${new Date().getFullYear()} ODiMs Welding & Automation. All rights reserved.
+          © ${new Date().getFullYear()} Franclean Laundry. All rights reserved.
         </td>
       </tr>
     </table>
