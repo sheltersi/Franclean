@@ -22,7 +22,7 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Phone, label: "Phone", value: "(555) 123-4567", href: "tel:+15551234567" },
-    { icon: Mail, label: "Email", value: "hello@freshwash.com", href: "mailto:hello@freshwash.com" },
+    { icon: Mail, label: "Email", value: "hello@franclean.com", href: "mailto:hello@franclean.com" },
     { icon: MapPin, label: "Address", value: "123 Clean Street, Laundry City, LC 12345" },
     { icon: Clock, label: "Hours", value: "Mon-Sat: 7AM-9PM, Sun: 9AM-6PM" }
   ];

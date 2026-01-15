@@ -2,6 +2,7 @@ import CTASection from "@/components/CTASection";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
 import ServicesSection from "@/components/ServicesSections";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
 
       {/* How it works section*/}
      <HowItWorks/>
+
+     <TestimonialsSection />
 
       {/* FINAL CTA */}
        <CTASection />

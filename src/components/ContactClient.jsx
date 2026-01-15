@@ -22,10 +22,11 @@ const ContactClient = () => {
       const formData = new FormData(form);
   
       const payload = {
-        name: formData.get("name")?.trim(),
+         name: formData.get("name")?.trim(),
         email: formData.get("email")?.trim(),
         phone: formData.get("phone")?.trim(),
         message: formData.get("message")?.trim(),
+
       };
   
       

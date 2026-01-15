@@ -23,7 +23,7 @@ export const metadata = {
       { url: "/favicon.ico", sizes: "16x16", type: "image/png" },
     ],
   },
-  description: "ODiMs Welding & Automation offers professional welding, gate motor repairs, automated gates,steel fabrication services, remote coding, garage doors repairs & installation",
+  description: "Franclean Laundry offers professional laundry, washing, drying, ironing, and stain removal services with convenient pickup and delivery for homes and businesses.",
 };
 export default function RootLayout({ children }) {
   return (

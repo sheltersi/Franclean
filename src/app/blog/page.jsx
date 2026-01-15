@@ -4,8 +4,8 @@ import Link from "next/link";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata = {
-    title: "Blog | FreshWash - Laundry Tips & Insights",
-    description: "Discover expert laundry tips, fabric care guides, and industry insights from FreshWash professionals."
+    title: "Blog | Franclean - Laundry Tips & Insights",
+    description: "Discover expert laundry tips, fabric care guides, and industry insights from Franclean professionals."
   }
 
 const Blog = () => {

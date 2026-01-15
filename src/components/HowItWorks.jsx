@@ -42,17 +42,16 @@ const HowItWorks = () => {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span
-            className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4"
-            style={{
-              backgroundColor: "#90f3ff33", // soft aqua bg
-              color: "#70d9f0", // text same as icon
-            }}
+            className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 text-sky-600 bg-sky-100"
+            // style={{
+            //   backgroundColor: "#90f3ff33", // soft aqua bg
+            //   color: "#70d9f0", // text same as icon
+            // }}
           >
             How It Works
           </span>
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
-            style={{ color: "#1c1c1c" }} // dark heading
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-sky-600"
           >
             Simple as 1, 2, 3, 4
           </h2>
@@ -68,15 +67,12 @@ const HowItWorks = () => {
         {/* Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((item, index) => (
-            <div key={item.step} className="relative">
+            <div key={item.step} className="relative text-sky-600">
               {/* Connector line */}
               {index < steps.length - 1 && (
                 <div
-                  className="hidden lg:block absolute top-12 left-[60%] w-full h-0.5"
-                  style={{
-                    background:
-                      "linear-gradient(to right, rgba(144,243,255,0.3), rgba(144,243,255,0.1))",
-                  }}
+                  className="hidden lg:block absolute top-12 left-[50%] w-[70%] h-0.5 bg-sky-200 border-dotted"
+                
                 />
               )}
 
@@ -84,17 +80,12 @@ const HowItWorks = () => {
                 {/* Step number */}
                 <div className="relative inline-flex mb-6">
                   <div
-                    className="w-24 h-24 rounded-3xl flex items-center justify-center"
-                    style={{ backgroundColor: "#90f3ff33" }} // soft icon bg
+                    className="w-24 h-24 rounded-3xl flex items-center justify-center bg-sky-100"
                   >
                     <item.icon className="w-10 h-10" style={{ color: "text-sky-500" }} />
                   </div>
                   <span
-                    className="absolute -top-2 -right-2 w-8 h-8 rounded-full text-sm font-bold flex items-center justify-center"
-                    style={{
-                      backgroundColor: "#90f3ff",
-                      color: "#ffffff",
-                    }}
+                    className="absolute -top-2 -right-2 w-8 h-8 rounded-full text-sm font-bold flex items-center justify-center text-white bg-sky-500"
                   >
                     {item.step.replace("0", "")}
                   </span>

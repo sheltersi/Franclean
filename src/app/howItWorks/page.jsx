@@ -3,8 +3,8 @@ import { Calendar, Package, Sparkles, Truck } from "lucide-react";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata ={
-title: "How It Works - FreshWash | Easy Laundry Pickup & Delivery",
-description: "Learn how FreshWash makes laundry effortless. Schedule, we pickup, clean professionally, and deliver fresh clothes to your door."
+title: "How It Works - Franclean | Easy Laundry Pickup & Delivery",
+description: "Learn how Franclean makes laundry effortless. Schedule, we pickup, clean professionally, and deliver fresh clothes to your door."
 }
 
 const HowItWorksPage = () => {

@@ -4,7 +4,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata = {
-    title:"About Us - FreshWash | Our Story & Mission",
+    title:"About Us - Franclean | Our Story & Mission",
     description: "Learn more about Franclean Laundry, our mission, and our commitment to quality laundry services."
 }
 
@@ -33,10 +33,10 @@ const About = () => {
   ];
 
   const stats = [
-    { value: "10K+", label: "Happy Customers" },
-    { value: "500K+", label: "Items Cleaned" },
-    { value: "15+", label: "Years Experience" },
-    { value: "99%", label: "Satisfaction Rate" }
+    { value: "2K+", label: "Happy Customers" },
+    { value: "3K+", label: "Items Cleaned" },
+    { value: "5+", label: "Years Experience" },
+    { value: "95%", label: "Satisfaction Rate" }
   ];
 
     const team = [
@@ -80,7 +80,7 @@ const About = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">How It All Started</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Franclean began in 2024 when our founder, tired of spending weekends at the laundromat, 
+                  Franclean began in 2020 when our founder, tired of spending weekends at the laundromat, 
                   envisioned a better way. What if laundry could be effortless? What if someone could 
                   pick up your clothes, clean them professionally, and return them fresh and folded?
                 </p>
