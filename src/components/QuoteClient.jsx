@@ -178,7 +178,7 @@ Swal.fire({
 
   return (
     <>
-      <main className="pt-24 lg:pt-32 pb-16">
+      <main className=" pb-16">
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-sky-50 to-white py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4">

@@ -94,8 +94,8 @@ const ServicesSection = () => {
                       : "bg-accent text-accent-foreground"
                   }`}
                 >
-  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#90f3ff]/20">
-  <Icon className="w-6 h-6 text-[#90f3ff]" />
+  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-sky-100">
+  <Icon className="w-6 h-6 text-sky-500" />
 </div>
 
                 </div>

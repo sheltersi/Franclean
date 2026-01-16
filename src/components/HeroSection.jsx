@@ -1,4 +1,5 @@
 import { ArrowRight, Clock, Sparkles, Truck } from "lucide-react";
+import Link from "next/link";
 
 import Bubble from "./Bubble";
 import { WhatsAppButton } from "./WhatsAppButton";
@@ -54,13 +55,18 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up"
               style={{ animationDelay: "0.4s", opacity: 0 }}
             >
-              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-sky-500 text-white font-semibold rounded-2xl hover:bg-sky-600 hover:scale-105 transition-all duration-300 shadow-bubble group">
+            <Link href="/schedulePickup">
+               <button className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-sky-500 text-white font-semibold rounded-2xl hover:bg-sky-600 hover:scale-105 transition-all duration-300 shadow-bubble group">
                 Schedule Pickup
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
+            </Link>
+             
+             <Link href="/pricing">
               <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-200 text-gray-700 bg-white/80 backdrop-blur-sm font-semibold rounded-2xl hover:border-sky-500 hover:text-sky-500 transition-all duration-300">
                 View Pricing
               </button>
+              </Link>
             </div>
 
             {/* Stats */}

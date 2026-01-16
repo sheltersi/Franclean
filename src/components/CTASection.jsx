@@ -1,4 +1,5 @@
 import { ArrowRight, Phone } from "lucide-react";
+import Link from "next/link";
 
 import Bubble from "./Bubble";
 
@@ -24,14 +25,16 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/schedulePickup">
             <button className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold rounded-2xl hover:bg-gray-100 hover:scale-105 transition-all duration-300">
               Schedule First Pickup
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </button></Link>
+            <Link href="/contact">
             <button className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white bg-transparent font-semibold rounded-2xl hover:bg-white/10 transition-all duration-300">
               <Phone className="w-5 h-5" />
               Call Us Now
-            </button>
+            </button></Link>
           </div>
 
           <p className="mt-8 text-white/60 text-sm">
