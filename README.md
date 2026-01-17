@@ -9,7 +9,7 @@ This project is built to be fast, mobile-friendly, and easy to maintain.
 ---
 
 ##Services Page
-![Home Page](screenshots/services-page.jpeg)
+![Home Page](public/screenshots/services-page.jpeg)
 
 ## 🚀 Features
 
@@ -32,4 +32,4 @@ This project is built to be fast, mobile-friendly, and easy to maintain.
 ---
 
 ## how it works section
-![Home Page](screenshots/h-i-w-section.jpeg)
+![Home Page](public/screenshots/h-i-w-section.jpeg)
