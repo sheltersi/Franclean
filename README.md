@@ -1,6 +1,6 @@
 # Franclean Laundry Website 🧺✨
 
-![Home Page](screenshots/home-page.jpeg)
+![Home Page](public/screenshots/home-page.jpeg)
 
 Franclean Laundry is a modern laundry service website that allows customers to view services, pricing, and request a quote or schedule a pickup online.
 
